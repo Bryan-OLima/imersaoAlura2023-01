@@ -1,0 +1,63 @@
+@import '../../../../../dist/scss/variables.scss';
+
+:host {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
+    .buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    
+        width: 90%;
+            app-buttons{
+                width: 50%;
+            }
+    }
+
+    input {
+        width: 90%;
+        height: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
+        min-width: 250px;
+
+        border: none;
+        border-radius: 10px;
+
+        background-color: $secundary-background-color;
+        color: #FFF;
+
+        box-shadow: 1px 4px 5px rgba($color: #000, $alpha: 0.3);
+            &.name,
+            &.value {
+                font-size: 1rem;
+                text-align: center;
+                    &::placeholder {
+                        color: $card-background-color;
+                    }
+
+                    &:focus {
+                        border: none;
+                        outline: solid 1px #b1b1b1;
+                    }
+            }
+    }
+
+    .name {
+        margin-top:20px;
+    }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}

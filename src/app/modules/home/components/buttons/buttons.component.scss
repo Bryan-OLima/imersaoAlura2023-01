@@ -1,0 +1,23 @@
+@import '../../../../../dist/scss/variables.scss';
+
+:host {
+    button {
+        width: 100%;
+        height: 30px;
+        padding: 5px;
+
+        color: #FFF;
+        background-color: #7a42be;
+
+        border-radius: 10px;
+        border: none;
+
+        transition: 200ms;
+
+        &:hover {
+            cursor: pointer;
+            background-color: #6632a5;
+            transition: 400ms;
+        }
+    }
+}

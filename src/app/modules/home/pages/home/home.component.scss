@@ -1,0 +1,73 @@
+@import '../../../../../dist/scss/variables.scss';
+
+:host {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 70vw;
+        height: 60px;
+        min-width: 350px;
+        margin-top: 30px;
+
+        box-shadow: 1px 5px 7px rgb(0, 0, 0, 0.6);
+
+        border-radius: 10px;
+        background-color: #7a42be;
+        color: #FFF;
+    }
+
+    .card {
+        width: 70vw;
+        min-width: 350px;
+        margin-top: 20px;
+        padding-bottom: 20px;
+
+        box-shadow: 1px 5px 7px rgb(0, 0, 0, 0.4);
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+
+        border-radius: 10px;
+
+        background-color: $card-background-color;
+
+        app-inputs {
+            width: 100%;
+                &.name, &.value {
+                    font-size: 1rem;
+                    text-align: center;
+                }
+
+                &.name {
+                    margin-top: 30px;
+                }
+        }
+
+        .buttons {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            width: 90%;
+            margin-top: 20px;
+                app-buttons{
+                    margin-bottom: 20px;
+                    width: 46%;
+                }
+        }
+    }
+
+    h2 {
+        margin-top: 40px;
+    }
+}

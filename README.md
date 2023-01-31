@@ -1,27 +1,40 @@
-# Alura01
+# Currency Conversor
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.1.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.1. 
+It was produced for ALURA - IMERSÃO DEV JS 2023 with some upgrades that made the app idea better.
 
-## Development server
+You can take a look <a href="https://bryandev-aluraconversor.netlify.app/">here</a>.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Technologies
 
-## Code scaffolding
+<li> Angular
+<li> HTML
+<li> SCSS
+<li> JavaScript
+<li> TypeScript
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## API
 
-## Build
+I've used <a href="https://docs.awesomeapi.com.br/api-de-moedas"> Awesome API </a>.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Library
 
-## Running unit tests
+My own library. Nothing external.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+# The APP
 
-## Running end-to-end tests
+## App without data
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+![image](https://user-images.githubusercontent.com/85527991/215684831-1d44e2e9-1db8-4504-aa18-042badb8235a.png)
 
-## Further help
+You DO NEED to insert your name and and value to get any result. In another case, the error message will be there. 
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## App with data
+
+When you send the informations to web app, it will return the greetings and values like this: 
+![image](https://user-images.githubusercontent.com/85527991/215685132-39fd4865-8a87-4452-8867-b954eb7d7757.png)
+
+## Deleting data
+And when you click on APAGAR, the infos will be deleted and app will be restarted.
+
+PS: The dolar currency quotation will be refreshed every 30 seconds ( except on the weekend ).
